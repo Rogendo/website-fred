@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html>
+<head>
+<link rel="icon" type="image/x-icon" href="images/icon3.png">
+
+<style>
+ body {
+    background-color:#D0F0C0;
+}
+.navbar {
+	  
+	  width: 900px;
+	  margin: auto;
+	}
+	
+.navbar ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0px;
+  overflow: hidden;
+  background-color: lightgray;
+  border-radius: 25px;
+  border: 2px solid #73AD21;
+}
+.navbar a{
+    float:left;
+    text-align:center;
+    padding:18px 20px;
+}
+
+.navbar li {
+  float: left;
+}
+.navbar img{
+    float:left;
+    padding:16px 18px;
+    align:center;
+}
+
+li a {
+  display: block;
+  color: blue;
+ font-size:20px;
+  text-align: center;
+  padding: 10px 20px;
+  text-decoration: none;
+}
+.active{
+background-color: gray;
+color: white;
+}
+li a:hover {
+  background-color: orange;
+  color: white;
+}
+* {
+  box-sizing: border-box;
+}
+
+input[type=text], select, textarea {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  resize: vertical;
+}
+
+label {
+  padding: 12px 12px 12px 0;
+  display: inline-block;
+}
+
+input[type=submit] {
+  background-color: #04AA6D;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  float: right;
+}
+
+input[type=submit]:hover {
+  background-color: #45a049;
+}
+
+.container {
+  border-radius: 5px;
+  background-color: #f2f2f2;
+  padding: 20px;
+}
+
+.col-25 {
+  float: left;
+  width: 25%;
+  margin-top: 6px;
+}
+
+.col-75 {
+  float: left;
+  width: 75%;
+  margin-top: 6px;
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Responsive layout - when the screen is less than 600px wide, make the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+  .col-25, .col-75, input[type=submit] {
+    width: 100%;
+    margin-top: 0;
+  }
+}
+</style>
+</head>
+<body>
+
+<div class='navbar'>
+<ul>
+  <li><img src="images/icon3.png" style="width:80%">
+
+  <li><a href="home.html">Home</a></li>
+  <li><a href="gallery.html">Gallery</a></li>
+  <li><a href="about.html">About Us</a></li>
+  <li><a class="active" href="contact.html">Contact us</a></li>
+
+
+</ul>
+</div>
+
+
+
+<h2>Contact us Form</h2>
+<p>To Get in touch, Write to us below and we will respond directly to your gmail inbox</p>
+
+<div class="container">
+  <form action="/action_page.php">
+  <div class="row">
+    <div class="col-25">
+      <label for="fname">Name</label>
+    </div>
+    <div class="col-75">
+      <input type="text" id="fname" name="firstname" placeholder="Your name..">
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-25">
+      <label for="email">E-Mail</label>
+    </div>
+    <div class="col-75">
+      <input type="text" id="email" name="email" placeholder="Your email..">
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-25">
+      <label for="subject">Subject</label>
+    </div>
+    <div class="col-75">
+      <select id="subject" name="subject">
+        <option value="bookappointment">Book Appointment</option>
+        <option value="enquiry">Enquiries</option>
+        <option value="others">Others</option>
+      </select>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-25">
+      <label for="message">Message</label>
+    </div>
+    <div class="col-75">
+      <textarea id="message" name="message" placeholder="Write something.." style="height:200px"></textarea>
+    </div>
+  </div>
+  <br>
+  <div class="row">
+    <input type="submit" value="Submit">
+  </div>
+  </form>
+</div>
+
+</body>
+<footer>
+         <div class="line">
+            <div class="s-12 l-6">
+               <h6><a href="#">Copyright 2022, fred-developer</a></h6>
+            </div>
+            
+      </footer>
+</html>
+

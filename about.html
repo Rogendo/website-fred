@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html>
+<head>
+<link rel="icon" type="image/x-icon" href="images/icon3.png">
+
+<style>
+ body {
+    background-color:#D0F0C0;
+}
+.navbar {
+	  
+	  width: 900px;
+	  margin: auto;
+      
+	}
+	
+.navbar ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0px;
+  overflow: hidden;
+  background-color: lightgray;
+  border-radius: 25px;
+  border: 2px solid #73AD21;
+}
+.navbar a{
+    float:left;
+    text-align:center;
+    padding:18px 20px;
+}
+.navbar img{
+    float:left;
+    padding:16px 18px;
+    align:center;
+}
+
+.navbar li {
+  float: left;
+
+}
+
+li a {
+  display: block;
+  
+  
+  color: blue;
+ font-size:20px;
+  text-align: center;
+  padding: 10px 20px;
+  text-decoration: none;
+}
+.active{
+background-color: gray;
+color: white;
+}
+li a:hover {
+  background-color: orange;
+  color: white;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+/* Style the header */
+header {
+  background-color: #D0F0C0;
+  padding: 30px;
+  text-align: center;
+  font-size: 35px;
+  color: white;
+}
+
+/* Create two columns/boxes that floats next to each other */
+nav {
+  float: left;
+  width: 30%;
+  height: 300px; /* only for demonstration, should be removed */
+  background: #ccc;
+  padding: 20px;
+}
+
+/* Style the list inside the menu */
+nav ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+article {
+  float: left;
+  padding: 20px;
+  width: 70%;
+  background-color: #f1f1f1;
+  height: 300px; /* only for demonstration, should be removed */
+}
+
+/* Clear floats after the columns */
+section::after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Style the footer */
+footer {
+  
+  padding: 10px;
+  text-align: center;
+  color: white;
+}
+
+/* Responsive layout - makes the two columns/boxes stack on top of each other instead of next to each other, on small screens */
+@media (max-width: 600px) {
+  nav, article {
+    width: 100%;
+    height: auto;
+  }
+}
+</style>
+</head>
+<body>
+<div class="navbar">
+<ul>
+  <li><img src="images/icon3.png" style="width:80%"></li>
+
+  <li><a href="home.html">Home</a></li>
+  <li><a href="gallery.html">Gallery</a></li>
+  <li><a class="active" href="about.html">About Us</a></li>
+  <li><a href="contact.html">Contact us</a></li>
+
+
+</ul>
+</div>
+</body>
+
+<body>
+
+
+<header>
+  <h2>...</h2>
+</header>
+
+<section>
+  <nav>
+  <h5><p>To view some of our projects click the link bellow</p></h5>
+
+    <ul>
+      <li><a href="gallery.html">Gallery</a></li>
+      
+    </ul>
+
+  </nav>
+  
+  <article>
+    <h1><i>About Fredrick Photography</i></h1>
+    <h2><p><b>We professional photographers </b></p></h2>
+    <p>We take professional photographs, shoot high quality videos and pictures. We take shoot at a cost friendly fee and we also take private sessions and events.</p>
+  </article>
+</section>
+<footer>
+         <div class="line">
+            <div class="s-12 l-6">
+               <h6><a href="#">Copyright 2022, fred-developer</a></h6>
+            </div>
+            
+</footer>
+
+</body>
+</html>
+
+
